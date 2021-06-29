@@ -1,0 +1,90 @@
+{
+   "product": "OMS",
+   "prod" : {
+       "project":"loblaws",
+	   "omsDataModelLoginUsers":{
+	      "buyerusername":"autolce",
+	      "vendorusername":"autosell",
+	      "carrierusername": "autocarrier",
+	      "password":"K@ri2017!"
+	   },
+	   "omsDataModelPurchaseOrder":{
+   		  "shipToWarehouse": "03-MAPLEGROV",
+		  "routing":"FOB",
+		  "mode":"Ground",
+		  "vendor":"DemoSO1",
+		  "templatename":"SNFRUITS"
+	   },
+	   "omsDataModelPurchaseOrderDetails":{
+		  "quantity":40,
+		  "price":30
+	   },
+   	   "tmsDataModelNewOrders": {
+	   	  "carrier": "DCarrier"
+	   },
+	   "omsDataModelVendorOrderManagement":{
+	   	  "shippingwarehouse":"ARK_LOC"
+	   },
+	   "omsDataModelShipmentOrder":{
+	   	  "cool":"CA"
+	   }
+   },   
+   "pre-prod" : {
+       "project":"loblaws",
+	   "omsDataModelLoginUsers":{
+	      "buyerusername":"itnlce",
+	      "vendorusername":"itndriscolls",
+	      "carrierusername": "itn7star",
+	      "password":"K@ri2017!"
+	   },
+	   "omsDataModelPurchaseOrder":{
+   		  "shipToWarehouse": "60-AJAX",
+		  "routing":"FOB",
+		  "mode":"Ground",
+		  "vendor":"Driscoll's",
+		  "templatename":"DRISCOLL DC15"
+	   },
+	   "omsDataModelPurchaseOrderDetails":{
+		  "quantity":40,
+		  "price":30
+	   },
+	   "tmsDataModelNewOrders": {
+	   	  "carrier": "7 Star"
+	   },
+	   "omsDataModelVendorOrderManagement":{
+	   	  "shippingwarehouse":"Laredo"
+	   },
+	   "omsDataModelShipmentOrder":{
+	   	  "cool":"CA"
+	   }
+   },
+   "qa-stage" : {
+   	   "project":"loblaws",
+	   "omsDataModelLoginUsers":{
+	      "buyerusername":"autolce",
+	      "vendorusername":"autodelmontefresh",
+	      "carrierusername": "itn7star",
+	      "password":"K@ri2017!"
+	   },
+	   "omsDataModelPurchaseOrder":{
+   		  "shipToWarehouse": "03-MAPLEGROV",
+		  "routing":"Delivered",
+		  "mode":"Ground",
+		  "vendor":"Del Monte",
+		  "templatename":"Automation_1"
+	   },
+	   "omsDataModelPurchaseOrderDetails":{
+		  "quantity":40,
+		  "price":30
+	   },
+   	   "tmsDataModelNewOrders": {
+	   	  "carrier": "7 Star"
+	   },
+	   "omsDataModelVendorOrderManagement":{
+	   	  "shippingwarehouse":"Atlanta"
+	   },
+	   "omsDataModelShipmentOrder":{
+	   	  "cool":"CA"
+ 	   }
+	}
+}

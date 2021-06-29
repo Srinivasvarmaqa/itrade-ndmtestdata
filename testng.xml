@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite thread-count="3" name="smokelogin-test" parallel="tests">
+ <listeners>
+    <listener class-name="com.itt.retry.RetryListener"/>
+    <listener class-name="com.itt.automation.customreporting.CustomTestHTMLReporter"/>
+  </listeners>
+ <test name="BuyerMenuPart1">
+        <classes> 
+            <class name="com.itt.oms.tests.BuyerAllMenuPageBuy8PreProdTests" />
+        </classes>
+   </test>
+   <test name="BuyerMenuPart2">
+        <classes> 
+            <class name="com.itt.oms.tests.BuyerAllMenuPageBuy8PreProdTests2" />
+        </classes>
+   </test>
+   <test name="AllVendorMenuTabTest">
+        <classes>
+            <class name="com.itt.oms.tests.VendorAllMenuPagePreProdTests" />
+        </classes>
+   </test>
+  <test name="AllOperatorMenuTabTest">
+        <classes>
+            <class name="com.itt.oms.tests.OperatorAllMenuPagePreProdTests" />
+        </classes>
+   </test>
+   <test name="AllCarrierMenuTabTest">
+        <classes> 
+            <class name="com.itt.oms.tests.CarrierAllMenuPagePreProdTests" />
+        </classes>
+      </test>
+  <test name="KROGER-MasterPurchaseOrderWithConsolidatorPreProdTest">
+        <classes>
+            <class name="com.itt.oms.threetier.MasterPurchaseOrderWithConsolidatorTest" />
+        </classes>
+   </test> 
+    <test name="LOBLAWS-PurchaseOrderWorkflowLoblawsWithCarrierPreprodTest">
+        <classes> 
+            <class name="com.itt.oms.tests.PurchaseOrderWorkflowLoblawsWithCarrierTest" />
+        </classes>
+    </test>
+ </suite>

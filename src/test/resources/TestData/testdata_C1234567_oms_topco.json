@@ -1,0 +1,37 @@
+{
+   "product": "OMS",
+   "prod": {
+      "project": "Topco",
+	   "omsDataModelLoginUsers": {
+	      "buyerusername": "autotopco1",
+	      "vendorusername": "autosell",
+	      "carrierusername": "autocarrier",
+	      "xdockusername": "demoxd",
+	      "password": "K@ri2017!"
+	   },
+	   "omsDataModelMasterPurchaseOrder": {
+   	  "shipToWarehouse": "Distributor",
+		  "routing": "Delivered",
+		  "group": "DemoTopco",
+		  "mode": "Ground",
+		  "customer": "Distributor",
+		  "templatename": "Automation_prod"
+	   },
+	   "omsDataModelPurchaseOrderDetails": {
+		  "quantity": 100,
+		  "price": 45,
+		  "vendorname": "DemoSO1",
+		  "custfrtcost": 500
+	   },
+	   "tmsDataModelNewOrders": {
+	     "carrier": "DCarrier"
+	   },
+	   "omsDataModelVendorOrderManagement":{
+	     "shippingwarehouse": "ARK_LOC"
+	   },
+	   "omsDataModelShipmentOrder":{
+	     "cool":"US",
+	     "bioengineer": "true"
+	   }
+   }
+}

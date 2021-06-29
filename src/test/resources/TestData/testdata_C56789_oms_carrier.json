@@ -1,0 +1,20 @@
+{
+   "product": "OMS",
+   "pre-prod" : {
+       "project":"loblaws",
+	   "omsDataModelLoginUsers":{
+	      "carrierusername": "autolce",
+	      "password":"K@ri2017!"
+	   }
+   },
+   "qa-stage" : {
+       "project":"loblaws",
+	   "omsDataModelLoginUsers":{
+	      "carrierusername": "autochrwk",
+	      "password":"K@ri2017!"
+	   }
+   }
+}
+
+
+

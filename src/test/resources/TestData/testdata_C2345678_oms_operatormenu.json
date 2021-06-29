@@ -1,0 +1,10 @@
+{
+   "product": "OMS",
+   "pre-prod" : {
+   	"project":"loblaws",
+	   "omsDataModelLoginUsers":{
+	      "operatorusername": "autosodexo",
+	      "password":"K@ri2017!"
+	   }
+   }
+}
