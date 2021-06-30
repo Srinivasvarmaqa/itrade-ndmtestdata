@@ -2,6 +2,7 @@
 <suite thread-count="3" name="smokelogin-test" parallel="tests">
  <listeners>
     <listener class-name="com.itt.retry.RetryListener"/>
+    <listener class-name="com.itt.automation.customreporting.SuiteListener"/>
     <listener class-name="com.itt.automation.customreporting.CustomTestHTMLReporter"/>
   </listeners>
  <test name="BuyerMenuPart1">
