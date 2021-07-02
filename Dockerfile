@@ -13,7 +13,8 @@ ADD src/test/resources/TestData/*.json		src/test/resources/TestData/
 ADD src/main/resources/config.properties	.
 
 # ADD suite files
-ADD *.xml				.	
+ADD testng.xml 				.	
+ADD testng-prod.xml 				.	
 
 # ADD health check script
 ADD healthcheck.sh                      healthcheck.sh

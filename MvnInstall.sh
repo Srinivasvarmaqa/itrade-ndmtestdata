@@ -1,23 +1,23 @@
 #Maven package and install
 
-Path=${1}
-cd ${Path}
+Path=`pwd`
+#cd ${Path}
 
-cd ITTDriverLayer
+cd ../itnf-driver
 mvn clean install -U -DskipTests
 mvn clean package -U -DskipTests
 cd -
 
-cd ITTBusinessLayer
+cd ../itnf-business
 mvn clean install -U -DskipTests
 mvn clean package -U -DskipTests
 cd -
 
-cd ITTBaseTest
+cd ../itnf-basetest
 mvn clean install -U -DskipTests
 mvn clean package -U -DskipTests
 cd -
 
-cd ITTSampleTestRepo
+cd ../itnf-omsent
 mvn clean install -U -DskipTests
 mvn clean package -U -DskipTests
