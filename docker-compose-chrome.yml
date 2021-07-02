@@ -1,4 +1,4 @@
-version: "3.9"
+version: "2.2"
 services:
 
   chrome1:
@@ -69,7 +69,7 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - BROWSER=${BROWSER:-chrome}
-      - MODULE=${MODULE:?Module option is missing!!!!}
+      - MODULE=${MODULE:-testng.xml}
       - JAVA_OPTS=-Xmx1024m
     volumes:
       - ./output_codebase_chrome/test-output:/usr/share/selenium/test-output
