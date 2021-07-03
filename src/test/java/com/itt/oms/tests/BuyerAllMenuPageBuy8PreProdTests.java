@@ -764,6 +764,7 @@ public class BuyerAllMenuPageBuy8PreProdTests extends OMSBaseTest {
 		
 		oMSHelperFactory.getoMSMenuNavigationPage().openLeftMainMenu(mainMenuName);
 
+		Thread.sleep(5000);
 		LOG.info("CLICK ON ALL RECEIVING PAGES AND VERIFY");
 		mainMenuName = "Receiving";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openLeftMainMenu(mainMenuName);		 
