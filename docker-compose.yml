@@ -16,80 +16,80 @@ services:
     ports:
       - "9002:5900"
 
-  chrome2:
-    image: selenium/node-chrome:4.0.0-beta-4-20210608
-    restart: always
-    volumes:
-      - /dev/shm:/dev/shm
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
-    ports:
-      - "9003:5900"
+  # chrome2:
+  #   image: selenium/node-chrome:4.0.0-beta-4-20210608
+  #   restart: always
+  #   volumes:
+  #     - /dev/shm:/dev/shm
+  #   depends_on:
+  #     - selenium-hub
+  #   environment:
+  #     - SE_EVENT_BUS_HOST=selenium-hub
+  #     - SE_EVENT_BUS_PUBLISH_PORT=4442
+  #     - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  #     - JAVA_OPTS=-Xmx512m
+  #   ports:
+  #     - "9003:5900"
 
-  chrome3:
-    image: selenium/node-chrome:4.0.0-beta-4-20210608
-    restart: always
-    volumes:
-      - /dev/shm:/dev/shm
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
-    ports:
-      - "9004:5900"
+  # chrome3:
+  #   image: selenium/node-chrome:4.0.0-beta-4-20210608
+  #   restart: always
+  #   volumes:
+  #     - /dev/shm:/dev/shm
+  #   depends_on:
+  #     - selenium-hub
+  #   environment:
+  #     - SE_EVENT_BUS_HOST=selenium-hub
+  #     - SE_EVENT_BUS_PUBLISH_PORT=4442
+  #     - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  #     - JAVA_OPTS=-Xmx512m
+  #   ports:
+  #     - "9004:5900"
 
-  edge1:
-    image: selenium/node-edge:4.0.0-beta-4-20210608
-    restart: always
-    volumes:
-      - /dev/shm:/dev/shm
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
-    ports:
-      - "9005:5900"
+  # edge1:
+  #   image: selenium/node-edge:4.0.0-beta-4-20210608
+  #   restart: always
+  #   volumes:
+  #     - /dev/shm:/dev/shm
+  #   depends_on:
+  #     - selenium-hub
+  #   environment:
+  #     - SE_EVENT_BUS_HOST=selenium-hub
+  #     - SE_EVENT_BUS_PUBLISH_PORT=4442
+  #     - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  #     - JAVA_OPTS=-Xmx512m
+  #   ports:
+  #     - "9005:5900"
 
-  edge2:
-    image: selenium/node-edge:4.0.0-beta-4-20210608
-    restart: always
-    volumes:
-      - /dev/shm:/dev/shm
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
-    ports:
-      - "9006:5900"
+  # edge2:
+  #   image: selenium/node-edge:4.0.0-beta-4-20210608
+  #   restart: always
+  #   volumes:
+  #     - /dev/shm:/dev/shm
+  #   depends_on:
+  #     - selenium-hub
+  #   environment:
+  #     - SE_EVENT_BUS_HOST=selenium-hub
+  #     - SE_EVENT_BUS_PUBLISH_PORT=4442
+  #     - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  #     - JAVA_OPTS=-Xmx512m
+  #   ports:
+  #     - "9006:5900"
 
-  edge3:
-   image: selenium/node-edge:4.0.0-beta-4-20210608
-   restart: always
-   volumes:
-      - /dev/shm:/dev/shm
-   depends_on:
-      - selenium-hub
-   environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
-   ports:
-      - "9007:5900"
+  # edge3:
+  #  image: selenium/node-edge:4.0.0-beta-4-20210608
+  #  restart: always
+  #  volumes:
+  #     - /dev/shm:/dev/shm
+  #  depends_on:
+  #     - selenium-hub
+  #  environment:
+  #     - SE_EVENT_BUS_HOST=selenium-hub
+  #     - SE_EVENT_BUS_PUBLISH_PORT=4442
+  #     - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  #     - JAVA_OPTS=-Xmx512m
+  #  ports:
+  #     - "9007:5900"
 
   selenium-hub:
     image: selenium/hub:4.0.0-beta-4-20210608
@@ -110,30 +110,40 @@ services:
     image: selenium-docker:v2
     depends_on:
       - chrome1
-      - chrome2
-      - chrome3
+      # - chrome2
+      # - chrome3
     environment:
       - HUB_HOST=selenium-hub
       - BROWSER=${BROWSER:-chrome}
-      - MODULE=${MODULE:-testng.xml}
+      - MODULE=${MODULE:-testng-prod.xml}
       - JAVA_OPTS=-Xmx1024m
     volumes:
       - ./output_codebase_chrome/test-output:/usr/share/selenium/test-output
       - ./output_codebase_chrome/ScreenShots:/usr/share/selenium/ScreenShots
       - ./output_codebase_chrome/TestRunLog:/usr/share/selenium/TestOutput/
 
-  codebase_edge:
-    image: selenium-docker:v2
-    depends_on:
-      - edge1
-      - edge2
-      - edge3
-    environment:
-      - HUB_HOST=selenium-hub
-      - BROWSER=${BROWSER:-edge}
-      - MODULE=${MODULE:-testng.xml}
-      - JAVA_OPTS=-Xmx1024m
+  # codebase_edge:
+  #   image: selenium-docker:v2
+  #   depends_on:
+  #     - edge1
+  #     - edge2
+  #     - edge3
+  #   environment:
+  #     - HUB_HOST=selenium-hub
+  #     - BROWSER=${BROWSER:-edge}
+  #     - MODULE=${MODULE:-testng-prod.xml}
+  #     - JAVA_OPTS=-Xmx1024m
+  #   volumes:
+  #     - ./output_codebase_edge/test-output:/usr/share/selenium/test-output
+  #     - ./output_codebase_edge/ScreenShots:/usr/share/selenium/ScreenShots
+  #     - ./output_codebase_edge/TestRunLog:/usr/share/selenium/TestOutput/
+
+  chrome_video:
+    image: selenium/video:ffmpeg-4.3.1-20210608
     volumes:
-      - ./output_codebase_edge/test-output:/usr/share/selenium/test-output
-      - ./output_codebase_edge/ScreenShots:/usr/share/selenium/ScreenShots
-      - ./output_codebase_edge/TestRunLog:/usr/share/selenium/TestOutput/
+      - ./videos:/videos
+    depends_on:
+      - chrome1
+    environment:
+      - DISPLAY_CONTAINER_NAME=chrome1
+      - FILE_NAME=chrome_video.mp4
