@@ -11,7 +11,7 @@
             <class name="com.itt.oms.tests.BuyerAllMenuPageBuy8PreProdTests" />
         </classes>
    </test>
-<!--    <test name="BuyerMenuPart2">
+   <test name="BuyerMenuPart2">
         <classes> 
             <class name="com.itt.oms.tests.BuyerAllMenuPageBuy8PreProdTests2" />
         </classes>
@@ -30,5 +30,5 @@
         <classes> 
             <class name="com.itt.oms.tests.PurchaseOrderWorkflowLoblawsWithCarrierTest" />
         </classes>
-    </test> -->
+    </test>
  </suite>
