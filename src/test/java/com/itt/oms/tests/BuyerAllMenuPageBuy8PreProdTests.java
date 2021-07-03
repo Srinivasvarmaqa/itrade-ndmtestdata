@@ -420,7 +420,7 @@ public class BuyerAllMenuPageBuy8PreProdTests extends OMSBaseTest {
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
 		Assert.assertEquals(tabName, menuName, menuName + " title not found");
 		
-//		oMSHelperFactory.getoMSMenuNavigationPage().clickRightArrow(5);
+		oMSHelperFactory.getoMSMenuNavigationPage().clickRightArrow(5);
 		
 		menuName = "Seller Demand Status ";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openHeaderMenu(menuName);
