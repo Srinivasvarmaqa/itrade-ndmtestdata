@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite thread-count="2" name="smokelogin-test" parallel="tests">
+<suite thread-count="3" name="smokelogin-test" parallel="tests">
  <listeners>
     <listener class-name="com.itt.retry.RetryListener"/>
     <listener class-name="com.itt.automation.customreporting.SuiteListener"/>
