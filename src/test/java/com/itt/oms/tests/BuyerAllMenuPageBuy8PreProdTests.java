@@ -656,6 +656,7 @@ public class BuyerAllMenuPageBuy8PreProdTests extends OMSBaseTest {
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
 		Assert.assertEquals(tabName, menuName, menuName + " title not found");
 		
+        oMSHelperFactory.getoMSMenuNavigationPage().clickRightArrow(4);
 		menuName = "Vendor Origin";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openHeaderMenu(menuName);
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
@@ -671,7 +672,7 @@ public class BuyerAllMenuPageBuy8PreProdTests extends OMSBaseTest {
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
 		Assert.assertEquals(tabName, menuName, menuName + " title not found");
 
-		oMSHelperFactory.getoMSMenuNavigationPage().clickLeftArrow(9);
+		oMSHelperFactory.getoMSMenuNavigationPage().clickLeftArrow(13);
 		
 		menuName = "Availability";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openLeftSubMenu(mainMenuName,menuName);
