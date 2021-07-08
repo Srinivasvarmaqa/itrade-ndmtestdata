@@ -31,4 +31,9 @@
             <class name="com.itt.oms.tests.PurchaseOrderWorkflowLoblawsWithCarrierTest" />
         </classes>
     </test>
+	<test name="TOPCO-MasterPurchaseOrderWithConsolidatorTopcoTest">
+        <classes>
+            <class name="com.itt.oms.threetier.MasterPurchaseOrderWithConsolidatorTopcoTest" />
+        </classes>
+    </test>
  </suite>
