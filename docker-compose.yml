@@ -149,4 +149,13 @@ services:
       - ./output_codebase_edge/test-output:/usr/share/selenium/test-output
       - ./output_codebase_edge/ScreenShots:/usr/share/selenium/ScreenShots
       - ./output_codebase_edge/TestRunLog:/usr/share/selenium/TestOutput/
-
+  
+  chrome1_video:
+    image: selenium/video:ffmpeg-4.3.1-20210608
+    volumes:
+      - ./output_codebase_chrome/videos:/videos
+    depends_on:
+      - chrome1
+    environment:
+      - DISPLAY_CONTAINER_NAME=chrome1
+      - FILE_NAME=chrome1_video.mp4
