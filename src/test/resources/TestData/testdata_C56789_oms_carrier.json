@@ -2,19 +2,16 @@
    "product": "OMS",
    "pre-prod" : {
        "project":"loblaws",
-	   "omsDataModelLoginUsers":{
-	      "carrierusername": "itn7star",
+	   "LoginUsers":{
+	      "carrier": "itn7star",
 	      "password":"K@ri2017!"
 	   }
    },
    "qa-stage" : {
        "project":"loblaws",
-	   "omsDataModelLoginUsers":{
-	      "carrierusername": "autochrwk",
+	   "LoginUsers":{
+	      "carrier": "autochrwk",
 	      "password":"K@ri2017!"
 	   }
    }
 }
-
-
-

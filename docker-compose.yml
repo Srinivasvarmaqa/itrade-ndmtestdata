@@ -12,7 +12,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
       - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
       - SCREEN_WIDTH=3000
       - SCREEN_HEIGHT=1120
@@ -30,7 +30,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
       - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
       - SCREEN_WIDTH=3000
       - SCREEN_HEIGHT=1120
@@ -48,7 +48,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
       - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
       - SCREEN_WIDTH=3000
       - SCREEN_HEIGHT=1120
@@ -66,7 +66,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
       - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
       - SCREEN_WIDTH=3000
       - SCREEN_HEIGHT=1120
@@ -84,7 +84,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
       - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
       - SCREEN_WIDTH=3000
       - SCREEN_HEIGHT=1120
@@ -102,7 +102,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
       - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
       - SCREEN_WIDTH=3000
       - SCREEN_HEIGHT=1120

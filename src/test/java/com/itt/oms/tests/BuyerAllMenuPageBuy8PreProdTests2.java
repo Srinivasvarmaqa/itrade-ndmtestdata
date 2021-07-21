@@ -7,13 +7,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.itt.basetest.OMSBaseTest;
+import com.itt.basetest.ITTBaseTest;
 import com.itt.oms.datamodelhelper.OMSDataModelHelperFactory;
 import com.itt.oms.pages.login.OMSLoginPage.USER;
 import com.itt.parser.testdata.TestData;
 import com.itt.parser.testdata.TestDataProviders;
 
-public class BuyerAllMenuPageBuy8PreProdTests2 extends OMSBaseTest {
+public class BuyerAllMenuPageBuy8PreProdTests2 extends ITTBaseTest {
 
 	private static final Logger LOG = LoggerFactory.getLogger(BuyerAllMenuPageBuy8PreProdTests2.class);
     private String tabName;

@@ -5,13 +5,13 @@ import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.itt.basetest.OMSBaseTest;
+import com.itt.basetest.ITTBaseTest;
 import com.itt.oms.datamodelhelper.OMSDataModelHelperFactory;
 import com.itt.oms.pages.login.OMSLoginPage.USER;
 import com.itt.parser.testdata.TestData;
 import com.itt.parser.testdata.TestDataProviders;
 
-public class CarrierLoginTest extends OMSBaseTest {
+public class CarrierLoginTest extends ITTBaseTest {
 
 	private static final Logger LOG = LoggerFactory.getLogger(CarrierLoginTest.class);
 

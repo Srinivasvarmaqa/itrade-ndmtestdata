@@ -2,15 +2,15 @@
    "product": "OMS",
       "prod" : {
       	"project":"loblaws",
-	      "omsDataModelLoginUsers":{
-	        "vendorusername":"autosell",
+	      "LoginUsers":{
+	        "vendor":"autosell",
 	        "password":"K@ri2017!"
 	    }
    },
    "pre-prod" : {
    	"project":"loblaws",
-	   "omsDataModelLoginUsers":{
-	      "vendorusername":"itndriscolls",
+	   "LoginUsers":{
+	      "vendor":"itndriscolls",
 	      "password":"K@ri2017!"
 	   }
    }

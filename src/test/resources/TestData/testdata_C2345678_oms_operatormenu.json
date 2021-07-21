@@ -2,8 +2,8 @@
    "product": "OMS",
    "pre-prod" : {
    	"project":"loblaws",
-	   "omsDataModelLoginUsers":{
-	      "operatorusername": "autosodexo",
+	   "LoginUsers":{
+	      "operator": "autosodexo",
 	      "password":"K@ri2017!"
 	   }
    }
