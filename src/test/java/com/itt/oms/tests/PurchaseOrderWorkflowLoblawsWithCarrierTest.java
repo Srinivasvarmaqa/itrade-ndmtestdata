@@ -36,10 +36,11 @@ public class PurchaseOrderWorkflowLoblawsWithCarrierTest extends ITTBaseTest {
 
 		LOG.info("Create Purchase Order");
 		oMSHelperFactory.getoMSPurchaseOrderPage().createDirectPurchaseOrder(omsDataModelHelperFactory);
-		String poNumber = oMSHelperFactory.getPONumber();
 
 		LOG.info("Update Quantity and Price and submit the order");
 		oMSHelperFactory.getoMSPurchaseOrderDetailsPage().submitPurchaseOrder(omsDataModelHelperFactory);
+
+		String poNumber = oMSHelperFactory.getPONumber();
 
 		LOG.info("Verify PO status is Open");
 		String orderStatus = oMSHelperFactory.getOrderStatus();
