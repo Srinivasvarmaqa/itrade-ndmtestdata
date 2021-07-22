@@ -20,8 +20,8 @@
 	   "PurchaseOrderDetails": {
 		  "quantity": 100,
 		  "price": 45,
-		  "vendorname": "DemoSO1",
-		  "custfrtcost": 500
+		  "vendor": "DemoSO1",
+		  "custFrtCost": 500
 	   },
 	   "TmsNewOrders": {
 	     "carrier": "DCarrier"

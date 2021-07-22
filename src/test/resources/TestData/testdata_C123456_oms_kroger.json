@@ -14,16 +14,15 @@
 		  "routing": "Delivered",
 		  "group": "KCRB",
 		  "mode": "Ground",
-		  "invoicefrom": "Vendor",
 		  "template": "014 Chiquita Bananas 2017"
 	   },
 	   "PurchaseOrderDetails": {
 		  "quantity": 50,
 		  "price": 20,
-		  "vendorname": "Del Monte"
+		  "vendor": "Del Monte"
 	   },
 	   "Xdock": {
-	     "pickuploc": "C.H. Robinson Floral Consolidation"
+	     "pickupLocation": "C.H. Robinson Floral Consolidation"
 	   },
 	   "TmsNewOrders": {
 	     "carrier": "Ch Robinson1"
@@ -46,16 +45,15 @@
 		  "routing": "Delivered",
 		  "group": "KWFR",
 		  "mode": "Ground",
-		  "invoicefrom": "Vendor",
 		  "template": "Banana"
 	   },
 	   "PurchaseOrderDetails": {
 		  "quantity": 50,
 		  "price": 20,
-		  "vendorname": "Horton Fruit"
+		  "vendor": "Horton Fruit"
 	   },
 	   "Xdock": {
-	     "pickuploc": "Cross Dock Services Salinas"
+	     "pickupLocation": "Cross Dock Services Salinas"
 	   },
 	   "LoadStatus": {
 		  "driver": "John Doe",
