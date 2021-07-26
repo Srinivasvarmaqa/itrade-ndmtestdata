@@ -420,7 +420,7 @@ public class BuyerAllMenuPageBuy8PreProdTests extends ITTBaseTest {
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
 		Assert.assertEquals(tabName, menuName, menuName + " title not found");
 		
-		oMSHelperFactory.getoMSMenuNavigationPage().clickRightArrow(5);
+//		oMSHelperFactory.getoMSMenuNavigationPage().clickRightArrow(5);
 		
 		menuName = "Seller Demand Status ";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openHeaderMenu(menuName);
@@ -656,8 +656,7 @@ public class BuyerAllMenuPageBuy8PreProdTests extends ITTBaseTest {
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
 		Assert.assertEquals(tabName, menuName, menuName + " title not found");
 		
-		oMSHelperFactory.getoMSMenuNavigationPage().clickRightArrow(3);
-
+        oMSHelperFactory.getoMSMenuNavigationPage().clickRightArrow(4);
 		menuName = "Vendor Origin";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openHeaderMenu(menuName);
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
@@ -764,7 +763,6 @@ public class BuyerAllMenuPageBuy8PreProdTests extends ITTBaseTest {
 		
 		oMSHelperFactory.getoMSMenuNavigationPage().openLeftMainMenu(mainMenuName);
 
-		Thread.sleep(5000);
 		LOG.info("CLICK ON ALL RECEIVING PAGES AND VERIFY");
 		mainMenuName = "Receiving";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openLeftMainMenu(mainMenuName);		 
