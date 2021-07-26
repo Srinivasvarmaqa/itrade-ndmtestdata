@@ -672,7 +672,7 @@ public class BuyerAllMenuPageBuy8PreProdTests extends ITTBaseTest {
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
 		Assert.assertEquals(tabName, menuName, menuName + " title not found");
 
-		oMSHelperFactory.getoMSMenuNavigationPage().clickLeftArrow(13);
+		oMSHelperFactory.getoMSMenuNavigationPage().clickLeftArrow(4);
 		
 		menuName = "Availability";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openLeftSubMenu(mainMenuName,menuName);
