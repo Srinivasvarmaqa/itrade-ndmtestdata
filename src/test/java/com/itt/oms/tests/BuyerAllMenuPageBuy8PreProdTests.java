@@ -7,13 +7,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.itt.basetest.ITTBaseTest;
+import com.itt.basetest.OMSBaseTest;
 import com.itt.oms.datamodelhelper.OMSDataModelHelperFactory;
 import com.itt.oms.pages.login.OMSLoginPage.USER;
 import com.itt.parser.testdata.TestData;
 import com.itt.parser.testdata.TestDataProviders;
 
-public class BuyerAllMenuPageBuy8PreProdTests extends ITTBaseTest {
+public class BuyerAllMenuPageBuy8PreProdTests extends OMSBaseTest {
 
 	private static final Logger LOG = LoggerFactory.getLogger(BuyerAllMenuPageBuy8PreProdTests.class);
     private String tabName;
@@ -655,9 +655,8 @@ public class BuyerAllMenuPageBuy8PreProdTests extends ITTBaseTest {
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openHeaderMenu(menuName);
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
 		Assert.assertEquals(tabName, menuName, menuName + " title not found");
-
-		oMSHelperFactory.getoMSMenuNavigationPage().clickRightArrow(4);
-
+		
+        oMSHelperFactory.getoMSMenuNavigationPage().clickRightArrow(4);
 		menuName = "Vendor Origin";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openHeaderMenu(menuName);
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
@@ -673,7 +672,7 @@ public class BuyerAllMenuPageBuy8PreProdTests extends ITTBaseTest {
 		Assert.assertFalse(oMSHelperFactory.hasErrorMessage(), "Error found in this tab" + tabName);
 		Assert.assertEquals(tabName, menuName, menuName + " title not found");
 
-		oMSHelperFactory.getoMSMenuNavigationPage().clickLeftArrow(4);
+		oMSHelperFactory.getoMSMenuNavigationPage().clickLeftArrow(13);
 		
 		menuName = "Availability";
 		tabName = oMSHelperFactory.getoMSMenuNavigationPage().openLeftSubMenu(mainMenuName,menuName);
