@@ -2,88 +2,88 @@
    "product": "OMS",
    "prod" : {
        "project":"loblaws",
-	   "omsDataModelLoginUsers":{
-	      "buyerusername":"autolce",
-	      "vendorusername":"autosell",
-	      "carrierusername": "autocarrier",
+	   "LoginUsers":{
+	      "buyer":"autolce",
+	      "vendor":"autosell",
+	      "carrier": "autocarrier",
 	      "password":"K@ri2017!"
 	   },
-	   "omsDataModelPurchaseOrder":{
-   		  "shipToWarehouse": "03-MAPLEGROV",
+	   "PurchaseOrder":{
+   		  "shipTo": "03-MAPLEGROV",
 		  "routing":"FOB",
 		  "mode":"Ground",
 		  "vendor":"DemoSO1",
-		  "templatename":"SNFRUITS"
+		  "template":"SNFRUITS"
 	   },
-	   "omsDataModelPurchaseOrderDetails":{
+	   "PurchaseOrderDetails":{
 		  "quantity":40,
 		  "price":30
 	   },
-   	   "tmsDataModelNewOrders": {
+   	   "TmsNewOrders": {
 	   	  "carrier": "DCarrier"
 	   },
-	   "omsDataModelVendorOrderManagement":{
-	   	  "shippingwarehouse":"ARK_LOC"
+	   "VendorOrderManagement":{
+	   	  "shippingWareHouse":"ARK_LOC"
 	   },
-	   "omsDataModelShipmentOrder":{
+	   "ShipmentOrder":{
 	   	  "cool":"CA"
 	   }
    },   
    "pre-prod" : {
        "project":"loblaws",
-	   "omsDataModelLoginUsers":{
-	      "buyerusername":"itnlce",
-	      "vendorusername":"itndriscolls",
-	      "carrierusername": "itn7star",
+	   "LoginUsers":{
+	      "buyer":"itnlce",
+	      "vendor":"itndriscolls",
+	      "carrier": "itn7star",
 	      "password":"K@ri2017!"
 	   },
-	   "omsDataModelPurchaseOrder":{
-   		  "shipToWarehouse": "60-AJAX",
+	   "PurchaseOrder":{
+   		  "shipTo": "60-AJAX",
 		  "routing":"FOB",
 		  "mode":"Ground",
 		  "vendor":"Driscoll's",
-		  "templatename":"DRISCOLL DC15"
+		  "template":"DRISCOLL DC15"
 	   },
-	   "omsDataModelPurchaseOrderDetails":{
+	   "PurchaseOrderDetails":{
 		  "quantity":40,
 		  "price":30
 	   },
-	   "tmsDataModelNewOrders": {
+	   "TmsNewOrders": {
 	   	  "carrier": "7 Star"
 	   },
-	   "omsDataModelVendorOrderManagement":{
-	   	  "shippingwarehouse":"Laredo"
+	   "VendorOrderManagement":{
+	   	  "shippingWareHouse":"Laredo"
 	   },
-	   "omsDataModelShipmentOrder":{
+	   "ShipmentOrder":{
 	   	  "cool":"CA"
 	   }
    },
    "qa-stage" : {
    	   "project":"loblaws",
-	   "omsDataModelLoginUsers":{
-	      "buyerusername":"autolce",
-	      "vendorusername":"autodelmontefresh",
-	      "carrierusername": "itn7star",
+	   "LoginUsers":{
+	      "buyer":"autolce",
+	      "vendor":"autodelmontefresh",
+	      "carrier": "itn7star",
 	      "password":"K@ri2017!"
 	   },
-	   "omsDataModelPurchaseOrder":{
-   		  "shipToWarehouse": "03-MAPLEGROV",
+	   "PurchaseOrder":{
+   		  "shipTo": "03-MAPLEGROV",
 		  "routing":"Delivered",
 		  "mode":"Ground",
 		  "vendor":"Del Monte",
-		  "templatename":"Automation_1"
+		  "template":"Automation_1"
 	   },
-	   "omsDataModelPurchaseOrderDetails":{
+	   "PurchaseOrderDetails":{
 		  "quantity":40,
 		  "price":30
 	   },
-   	   "tmsDataModelNewOrders": {
+   	   "TmsNewOrders": {
 	   	  "carrier": "7 Star"
 	   },
-	   "omsDataModelVendorOrderManagement":{
-	   	  "shippingwarehouse":"Atlanta"
+	   "VendorOrderManagement":{
+	   	  "shippingWareHouse":"Atlanta"
 	   },
-	   "omsDataModelShipmentOrder":{
+	   "ShipmentOrder":{
 	   	  "cool":"CA"
  	   }
 	}

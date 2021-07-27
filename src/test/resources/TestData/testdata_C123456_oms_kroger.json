@@ -2,69 +2,67 @@
    "product": "OMS",
    "pre-prod": {
        "project": "kroger",
-	    "omsDataModelLoginUsers": {
-	      "buyerusername": "itn2",
-	      "vendorusername": "itndelmontefresh",
-	      "carrierusername": "itnchrwk",
-	      "xdockusername": "itnchrfloral",
+	    "LoginUsers": {
+	      "buyer": "itn2",
+	      "vendor": "itndelmontefresh",
+	      "carrier": "itnchrwk",
+	      "xdock": "itnchrfloral",
 	      "password": "K@ri2017!"
 	   },
-	   "omsDataModelMasterPurchaseOrder": {
-   	  "shipToWarehouse": "Atlanta Frzn",
+	   "MasterPurchaseOrder": {
+   	  "shipTo": "Atlanta Frzn",
 		  "routing": "Delivered",
 		  "group": "KCRB",
 		  "mode": "Ground",
-		  "invoicefrom": "Vendor",
-		  "templatename": "014 Chiquita Bananas 2017"
+		  "template": "014 Chiquita Bananas 2017"
 	   },
-	   "omsDataModelPurchaseOrderDetails": {
+	   "PurchaseOrderDetails": {
 		  "quantity": 50,
 		  "price": 20,
-		  "vendorname": "Del Monte"
+		  "vendor": "Del Monte"
 	   },
-	   "omsDataModelXdock": {
-	     "pickuploc": "C.H. Robinson Floral Consolidation"
+	   "Xdock": {
+	     "pickupLocation": "C.H. Robinson Floral Consolidation"
 	   },
-	   "tmsDataModelNewOrders": {
+	   "TmsNewOrders": {
 	     "carrier": "Ch Robinson1"
 	   },
-	   "omsDataModelShipmentOrder":{
+	   "ShipmentOrder":{
 	     "cool":"US"
 	   }
    },
     "qa-stage": {
     	"project": "kroger",
-	  	"omsDataModelLoginUsers": {
-	      "buyerusername": "autoitn",
-	      "vendorusername": "itnhorton",
-	      "carrierusername": "autochrwk",
-	      "xdockusername": "autocds",
+	  	"LoginUsers": {
+	      "buyer": "autoitn",
+	      "vendor": "itnhorton",
+	      "carrier": "autochrwk",
+	      "xdock": "autocds",
 	      "password": "K@ri2017!"
 	   },
-	   "omsDataModelMasterPurchaseOrder": {
-   	  "shipToWarehouse": "Central Whs",
+	   "MasterPurchaseOrder": {
+   	  "shipTo": "Central Whs",
 		  "routing": "Delivered",
 		  "group": "KWFR",
 		  "mode": "Ground",
-		  "invoicefrom": "Vendor",
-		  "templatename": "Banana"
+		  "template": "Banana"
 	   },
-	   "omsDataModelPurchaseOrderDetails": {
+	   "PurchaseOrderDetails": {
 		  "quantity": 50,
 		  "price": 20,
-		  "vendorname": "Horton Fruit"
+		  "vendor": "Horton Fruit"
 	   },
-	   "omsDataModelXdock": {
-	     "pickuploc": "Cross Dock Services Salinas"
+	   "Xdock": {
+	     "pickupLocation": "Cross Dock Services Salinas"
 	   },
-	   "omsDataModelLoadStatus": {
+	   "LoadStatus": {
 		  "driver": "John Doe",
 		  "vehicle": "123"
 	   },
-	   "tmsDataModelNewOrders": {
+	   "TmsNewOrders": {
 	     "carrier": "Ch Robinson1"
 	   },
-	   "omsDataModelShipmentOrder":{
+	   "ShipmentOrder":{
 	     "cool":"US"
 	   }
    }

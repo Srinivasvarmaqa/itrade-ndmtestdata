@@ -12,7 +12,10 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
+      - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
+      - SCREEN_WIDTH=3000
+      - SCREEN_HEIGHT=1120
     ports:
       - "9002:5900"
 
@@ -27,7 +30,10 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
+      - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
+      - SCREEN_WIDTH=3000
+      - SCREEN_HEIGHT=1120
     ports:
       - "9003:5900"
 
@@ -42,7 +48,10 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
+      - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
+      - SCREEN_WIDTH=3000
+      - SCREEN_HEIGHT=1120
     ports:
       - "9004:5900"
 
@@ -57,7 +66,10 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
+      - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
+      - SCREEN_WIDTH=3000
+      - SCREEN_HEIGHT=1120
     ports:
       - "9005:5900"
 
@@ -72,7 +84,10 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
+      - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
+      - SCREEN_WIDTH=3000
+      - SCREEN_HEIGHT=1120
     ports:
       - "9006:5900"
 
@@ -87,7 +102,10 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - JAVA_OPTS=-Xmx512m
+      - JAVA_OPTS=-Xmx1024m
+      - JAVA_OPTS=-Dselenium.LOGGER.level=FINE
+      - SCREEN_WIDTH=3000
+      - SCREEN_HEIGHT=1120
    ports:
       - "9007:5900"
 
@@ -105,6 +123,7 @@ services:
       GRID_BROWSER_TIMEOUT: 6000
       GRID_TIMEOUT: 6000
       JAVA_OPTS: -Xmx5120m
+      SE_OPTS: "--log-level INFO"
 
   codebase_chrome:
     image: selenium-docker:v2
@@ -115,7 +134,7 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - BROWSER=${BROWSER:-chrome}
-      - MODULE=${MODULE:?Module option is missing!!!!}
+      - MODULE=${MODULE:-testng-prod.xml}
       - JAVA_OPTS=-Xmx1024m
     volumes:
       - ./output_codebase_chrome/test-output:/usr/share/selenium/test-output
@@ -131,9 +150,69 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - BROWSER=${BROWSER:-edge}
-      - MODULE=${MODULE:?Module option is missing!!!!}
+      - MODULE=${MODULE:-testng-prod.xml}
       - JAVA_OPTS=-Xmx1024m
     volumes:
       - ./output_codebase_edge/test-output:/usr/share/selenium/test-output
       - ./output_codebase_edge/ScreenShots:/usr/share/selenium/ScreenShots
       - ./output_codebase_edge/TestRunLog:/usr/share/selenium/TestOutput/
+  
+  chrome1_video:
+    image: selenium/video:ffmpeg-4.3.1-20210608
+    volumes:
+      - ./output_codebase_chrome/videos:/videos
+    depends_on:
+      - chrome1
+    environment:
+      - DISPLAY_CONTAINER_NAME=chrome1
+      - FILE_NAME=chrome1_video.mp4
+
+  chrome2_video:
+    image: selenium/video:ffmpeg-4.3.1-20210608
+    volumes:
+      - ./output_codebase_chrome/videos:/videos
+    depends_on:
+      - chrome1
+    environment:
+      - DISPLAY_CONTAINER_NAME=chrome2
+      - FILE_NAME=chrome2_video.mp4
+
+  chrome3_video:
+    image: selenium/video:ffmpeg-4.3.1-20210608
+    volumes:
+      - ./output_codebase_chrome/videos:/videos
+    depends_on:
+      - chrome1
+    environment:
+      - DISPLAY_CONTAINER_NAME=chrome3
+      - FILE_NAME=chrome3_video.mp4
+
+  edge1_video:
+    image: selenium/video:ffmpeg-4.3.1-20210608
+    volumes:
+      - ./output_codebase_edge/videos:/videos
+    depends_on:
+      - chrome1
+    environment:
+      - DISPLAY_CONTAINER_NAME=edge1
+      - FILE_NAME=edge1_video.mp4
+
+  edge2_video:
+    image: selenium/video:ffmpeg-4.3.1-20210608
+    volumes:
+      - ./output_codebase_edge/videos:/videos
+    depends_on:
+      - chrome1
+    environment:
+      - DISPLAY_CONTAINER_NAME=edge2
+      - FILE_NAME=edge2_video.mp4
+
+  edge3_video:
+    image: selenium/video:ffmpeg-4.3.1-20210608
+    volumes:
+      - ./output_codebase_edge/videos:/videos
+    depends_on:
+      - chrome1
+    environment:
+      - DISPLAY_CONTAINER_NAME=edge3
+      - FILE_NAME=edge3_video.mp4

@@ -6,13 +6,13 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.itt.basetest.OMSBaseTest;
+import com.itt.basetest.ITTBaseTest;
 import com.itt.oms.datamodelhelper.OMSDataModelHelperFactory;
 import com.itt.oms.pages.login.OMSLoginPage.USER;
 import com.itt.parser.testdata.TestData;
 import com.itt.parser.testdata.TestDataProviders;
 
-public class MasterPurchaseOrderWithConsolidatorTest extends OMSBaseTest {
+public class MasterPurchaseOrderWithConsolidatorTest extends ITTBaseTest {
 
 	private static final Logger LOG = LoggerFactory.getLogger(MasterPurchaseOrderWithConsolidatorTest.class);
 

@@ -6,13 +6,13 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.itt.basetest.OMSBaseTest;
+import com.itt.basetest.ITTBaseTest;
 import com.itt.oms.datamodelhelper.OMSDataModelHelperFactory;
 import com.itt.oms.pages.login.OMSLoginPage.USER;
 import com.itt.parser.testdata.TestData;
 import com.itt.parser.testdata.TestDataProviders;
 
-public class PurchaseOrderWorkflowLoblawsWithCarrierTest extends OMSBaseTest {
+public class PurchaseOrderWorkflowLoblawsWithCarrierTest extends ITTBaseTest {
 
 	private static final Logger LOG = LoggerFactory.getLogger(PurchaseOrderWorkflowLoblawsWithCarrierTest.class);
 
@@ -36,10 +36,11 @@ public class PurchaseOrderWorkflowLoblawsWithCarrierTest extends OMSBaseTest {
 
 		LOG.info("Create Purchase Order");
 		oMSHelperFactory.getoMSPurchaseOrderPage().createDirectPurchaseOrder(omsDataModelHelperFactory);
-		String poNumber = oMSHelperFactory.getPONumber();
 
 		LOG.info("Update Quantity and Price and submit the order");
 		oMSHelperFactory.getoMSPurchaseOrderDetailsPage().submitPurchaseOrder(omsDataModelHelperFactory);
+
+		String poNumber = oMSHelperFactory.getPONumber();
 
 		LOG.info("Verify PO status is Open");
 		String orderStatus = oMSHelperFactory.getOrderStatus();
