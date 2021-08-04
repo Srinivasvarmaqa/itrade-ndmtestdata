@@ -1,4 +1,4 @@
-package com.itt.oms.tests;
+package com.itt.spend.tests;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

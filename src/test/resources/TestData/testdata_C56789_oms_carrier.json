@@ -1,17 +1,12 @@
 {
-   "product": "OMS",
-   "pre-prod" : {
-       "project":"loblaws",
+   "product": "SPEND",
+   "uat" : {
+       "project":"SPEND",
 	   "LoginUsers":{
-	      "carrier": "itn7star",
-	      "password":"K@ri2017!"
-	   }
-   },
-   "qa-stage" : {
-       "project":"loblaws",
-	   "LoginUsers":{
-	      "carrier": "autochrwk",
-	      "password":"K@ri2017!"
+	      "operator": "engproxy",
+	      "password":"Test123",
+	      "proxyid":"fiveguys2dc"
+
 	   }
    }
 }

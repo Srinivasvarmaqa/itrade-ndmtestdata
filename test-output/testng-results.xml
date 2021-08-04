@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-03T16:34:29 IST" name="Default suite" finished-at="2021-08-03T16:35:27 IST" duration-ms="57903">
+    <groups>
+    </groups>
+    <test started-at="2021-08-03T16:34:29 IST" name="Default test" finished-at="2021-08-03T16:35:27 IST" duration-ms="57903">
+      <class name="com.itt.spend.tests.InventoryWidgetTest">
+        <test-method is-config="true" signature="baseBeforeSuite(org.testng.ITestContext)[pri:0, instance:com.itt.spend.tests.InventoryWidgetTest@5824a83d]" started-at="2021-08-03T16:34:29 IST" name="baseBeforeSuite" finished-at="2021-08-03T16:34:29 IST" duration-ms="41" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cffcc61]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeSuite -->
+        <test-method is-config="true" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.itt.spend.tests.InventoryWidgetTest@5824a83d]" started-at="2021-08-03T16:34:29 IST" name="setupDriver" finished-at="2021-08-03T16:34:31 IST" duration-ms="1678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cffcc61]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method is-config="true" signature="beforeMethodWidgetLibraryTest()[pri:0, instance:com.itt.spend.tests.InventoryWidgetTest@5824a83d]" started-at="2021-08-03T16:34:31 IST" name="beforeMethodWidgetLibraryTest" finished-at="2021-08-03T16:34:41 IST" duration-ms="9746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWidgetLibraryTest -->
+        <test-method signature="testClickOnWidgets(com.itt.spend.datamodelhelper.SPENDDataModelHelperFactory)[pri:0, instance:com.itt.spend.tests.InventoryWidgetTest@5824a83d]" started-at="2021-08-03T16:34:41 IST" name="testClickOnWidgets" data-provider="testDataProvider" finished-at="2021-08-03T16:35:27 IST" duration-ms="46113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.itt.spend.datamodelhelper.SPENDDataModelHelperFactory@22fba58c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickOnWidgets -->
+      </class> <!-- com.itt.spend.tests.InventoryWidgetTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
